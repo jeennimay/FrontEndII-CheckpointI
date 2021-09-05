@@ -1,0 +1,75 @@
+/* ESTILIZAÇÃO SEÇÃO FORM */
+section.sectionForm{
+    margin: 2rem 0.5rem;        /* MARGEM */
+    padding: 0.2rem;            /* MARGEM INTERNA - PADDING */
+    position: absolute;         /* POSITION ABSOLUTE, PARA FICAR A CIMA DOS CARDS */
+    display: none;              /* DISPLAY NONE - PARA DEIXXAR O FORMULÁRIO ESCONDIDO */
+    left: 50%;                  /* PARA CENTRALIZAR O FORMULÁRIO */
+    top: 8%;                    /* 8% DO TOPO */
+    transform: translate(-50%); /* PARA FAZER O CONTRAPONTO DO LEFT: 50% */
+}
+/* ARTICLE FORM */
+article.containerForm{
+    min-width: 15rem;       /* LARGURA MÍNIMA DO ARTICLE */
+    max-width: 40rem;       /* LARGURA MÁXIMA DO ARTICLE */
+    padding: 2rem;          /* MARGEM INTERNA - PADDING */
+    background-color: khaki;    /* COR DE FUNDO DO FORMULÁRIO */
+    border-radius: 2rem;    /* BORDA ARREDONDADA */
+}
+/* ESTILIZAÇAO DA LABEL */
+label{
+    display: block;         /* DISPOSIÇÃO EM BLOCK, PARA OCUPAR A LINHA TODA */
+    margin: 0.9rem 0 0.2rem;    /* MARGEM */
+    font-weight: 600;           /* PESO DA FONT */
+    padding-left: 0.6rem;       /* MARGEM INTERNA SOMENTE NA ESQUERDA */
+    font-family: 'Montserrat', sans-serif;      /* LISTA DE FONTES */
+    color: saddlebrown;     /* COR DA FONTE */
+}
+/* ESTILIZAÇÃO INPUT E TEXTAREA */
+input, textarea{
+    display: block;         /* DISPOSIAÇÃO EM BLOCO, PARA OCUPAR TODA LINHA */
+    margin: 0.3rem 0;       /* MARGEM */
+    min-width: 90%;         /* LARGURA MINIMA DE 90% */
+    min-height: 2rem;       /* ALTURA MÍNIMA DE 2REM */
+    padding: 0 1rem;        /* MARGEM INTERNA, PARA DIREITA E ESQUERDA (RIGTH AND LEFT) */
+    border-radius: 2rem;    /* ARREDONDAMENTO DAS BORDAS */
+    border-style: none;     /* SEM EFEITO DE BORDA */
+    font-family: 'Besley', serif;   /* FONTE */
+    font-weight: 600;       /* PESO DA FONTE */
+    outline: none;          /* SEM OUTILINE, QUANDO O ELEMENTO ESTÁ EM FOCO, NÃO FICA ACAIXA PRETA EM VOLTA */
+}
+/* ESTILIZAÇÃO DA TEXTAREA */
+textarea{
+    overflow: hidden;       /* TIRAR A BARRA DE ROLAGEM LATERGAL DA CAIXA */
+    resize: none;           /* TIRAR A OPÇÃO DE RECONFIGURAR O TAMANHO, DIRETAMENTE NA PÁGINA */
+    height: 8rem ;          /* ALTURA DE 8REM */
+    text-indent: 0.3rem;    /* IDENTAÇÃO DO TEXTO */
+}
+/* ESTILIZAÇÃO OS PLACESHOLDER */
+input::placeholder, textarea::placeholder{
+    padding: 0.6rem;        /* MARGEM INTERNA */
+}
+/* ESTILIZAÇÃO DOS INPUTS E TEXTAREA QUANDO ESTÃO FOCADOS (SELECIONADOS) */
+input:focus, textarea:focus{
+    border: solid 2px saddlebrown;      /* ESTILO DA BORDA: SOLIDA, ESPESSURA DE 2PX, COR */
+}
+/* ESTILIAÇÃO DOS BOTÕES */
+button{
+    display: block;             /* DISPOSIÇAÕ EM BLOCO */
+    margin: 2rem auto 1rem;     /* MARGEM */
+    border-radius: 2rem;        /* ARREDONDAMENTO DA BORDA */
+    border-style: none;         /* SEM ESTILO DE BORDA */
+    padding: 0.5rem 0.8rem;     /* MARGEM INTERNA */
+    background-color: sienna;   /* COR DE FUNDO */
+    color: white;             /* COR DA FONTE */
+    font-weight: 600;           /* PESO DA FOTNE */
+    font-size: 1rem;            /* TAMANHO DE FONTE */
+    text-transform: uppercase;  /* TRANFORMANDO O TEXTO, TODAS AS LETRAS MAIUSCULAS */
+    cursor: pointer;            /* CURSOR POINTER */
+}
+/* BOTÃO RESET */
+button.btnReset{
+    background-color: transparent;      /* COR DE FUNDO TRANSPARENTE */
+    color: sienna;      /* COR DA FONTE */
+    margin: 0 auto;         /* MARGEM */
+}

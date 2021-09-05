@@ -1,0 +1,24 @@
+/* ESTILIZAÇÃO QUANDO O CURSOR PASSA SOBRE OS ELEMENTOS */
+    /* ESTILIZAÇÃO DO LINK NA TAG NAV */
+nav a:hover{
+    text-decoration: underline;     /* SUBLINHADO NO LINK */
+}
+
+/* FORM */
+    /* ESILIZAÇÃO DO INPUT E TEXTAREA */
+input:hover, textarea:hover{
+    background-color: saddlebrown;  /* COR DE FUNDO */
+    color: white;       /* COR DA FONTE */
+}
+    /* ESTILIZAÇÃO DOS PLACEHOLDER DO INPUT E DA TEXTAREA */
+input:hover::placeholder, textarea:hover::placeholder{
+    color: white;       /* COR DE FONTE */
+}
+/* ESTILIZAÇÃO BOTÃO CADASTRAR*/
+button[id="btnCadastrar"]:hover{
+    background-color: seagreen;   /* COR DE FUNDO */  
+}
+/* ESTILIZAÇÃO BOTÃO RESET */
+button[id="btnReset"]:hover{
+    text-decoration: underline;     /* SUBLINHADO */
+}

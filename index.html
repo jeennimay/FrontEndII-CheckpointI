@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- CSS - FORM -->
+    <link rel="stylesheet" href="./assets/css/form-style.css">
+    <!-- CSS - HOVER -->
+    <link rel="stylesheet" href="./assets/css/hover.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,600;0,800;1,500&family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="cadastrarReceita">Cadastrar receita</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionForm">
+            <article class="containerForm">
+                <form action="#" method="post" id="form">
+                    <label for="titulo">Nome da receita</label>
+                    <input type="text" name="titulo" id="titulo" class="titulo" placeholder="Digite o nome da receita">
+                    <label for="urlImg">Link da imagem</label>
+                    <input type="text" name="urlImg" id="urlImg" placeholder="Link da imagem">
+                    <label for="ingredientes">Ingredientes</label>
+                    <textarea name="ingredientes" id="ingredientes"
+                        placeholder="Digite aqui os ingredientes da sua receita"></textarea>
+                    <label for="receita">Receita</label>
+                    <textarea name="receita" id="receita" placeholder="Digite aqui a sua receita"></textarea>
+                    <button type="submit" id="btnCadastrar">Cadastrar</button>
+                    <button type="reset" class="btnReset" id="btnReset">Cancelar</button>
+                </form>
+            </article>
+        </section>
+        <section class="containerCard">
+            <article class="card">
+                <div class="divImg">
+                    <img src="https://img.itdg.com.br/images/recipes/000/041/516/324032/324032_original.jpg" alt="">
+                </div>
+                <div class="informacoes">
+                    <h2 class="tituloCard">Bolo de Banana</h2>
+                    <article class="cardIngredientes" id="cardIngredientes">
+                        <h3>Ingredientes</h3>
+                        <p class="cardIngredites__paragrafo">4 bananas-prata maduras amassadas
+                            3 ovos
+                            1 xícara (chá) de açúcar
+                            meia xícara (chá) de óleo
+                            meia xícara (chá) de Leite Líquido NINHO® Forti+ Integral
+                            2 xícaras (chá) de farinha de trigo
+                            1 colher (chá) de canela em pó
+                            1 colher (sopa) de fermento em pó
+                            1 colher (sopa) de açúcar
+                            meia colher (chá) de canela em pó</p>
+                    </article>
+                    <article class="cardReceita" id="cardReceita">
+                        <h3>Modo de preparo</h3>
+                        <p class="cardReceita__paragrafo">Em um recipiente, misture as bananas, os ovos e o açúcar.
+
+                        Acrescente o óleo, o Leite NINHO, a farinha de trigo, a canela, o fermento em pó e misture bem.
+                        
+                        Em uma forma retangular (30 x 20 cm) untada com óleo e polvilhada com farinha de trigo, despeje a massa e leve para assar, em forno médio (180°C), preaquecido, por cerca de 35 minutos ou até que, ao espetar um palito, este saia limpo.
+                        
+                        Desenforme e polvilhe com o açúcar e a canela misturados.</p>
+                    </article>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+    <!-- script -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

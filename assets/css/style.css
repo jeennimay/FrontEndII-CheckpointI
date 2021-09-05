@@ -1,0 +1,92 @@
+/*
+  font-family: 'Besley', serif;
+  font-family: 'Montserrat', sans-serif; 
+*/
+
+/* RESET */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* header */
+/* configuração da nav */
+header nav{
+    width: 100%;        /* largura */
+    height: 3rem;       /* altura */
+    background-color: khaki;    /* cor de fundo */
+    display: flex;  /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
+    justify-content: space-around;  /* espaçamento em volta dos itens */
+    align-items: center;        /* alinhamento vertical centralizado */
+}
+/* estilização do link */
+nav a{
+    text-decoration: none;      /* sem decoração no texto */
+    color:saddlebrown;      /* cor de fonte */
+    text-transform: uppercase;  /* transformando o texto em letras maiuscula */
+    font-weight: bold;  /* peso da fonte */
+    font-family: 'Montserrat', sans-serif;  /* fonte */
+    cursor: pointer;        /* cursor pointer */
+}
+/* body */
+/* estilização da seção class="containerCard" */
+section.containerCard{
+    display: flex;      /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
+    flex-direction: column; /* para que fique em coluna */
+    margin: 0 auto;     /* margem: 0 para cima e para baixo, e auto para centralizar horizontalmente o elemento */
+}
+/* estilização da article class="card" */
+article.card{
+    box-shadow: 0.2rem 0.2rem 0.9rem rgb(212, 208, 206);    /* sombreamento da caixa */
+    max-width: 80vw;        /* largura maxima de 80% da viewport */
+    padding: 1.5rem;        /* margim interna */
+    margin: 2rem auto;      /* margin */
+    display: flex;          /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
+    align-items: center;    /* alinhamento vertical centralizado */
+    flex-wrap: wrap;        /* permitir quebra de linha */
+    justify-content: center;    /* alinhamento horizontal centralizado */
+}
+/* estilização da div que contem a img */
+div.divImg{
+    max-width: 90%;     /* largura máxima */
+    margin-right: 2rem;     /* margem à direita */
+}
+/* estilização da imagem */
+div.divImg img{
+    max-width: 100%;    /* largura máxima */
+}
+/* estilização da div informações */
+div.informacoes{
+    margin: 1rem auto;  /*  margem*/
+}
+/* estilização da h2 dentro da div informações */
+div.informacoes h2{
+    margin: 0.5rem 0 1rem;  /* margem */
+    text-align: center;     /* alinhamento de texto */
+}
+/* estilização do parágrafo dentro da div informações */
+div.informacoes p{
+    font-family: 'Besley', serif;   /* font */
+    margin: 0.5rem 0 0;     /* margem */
+}
+/* estilização da article class="cardIngreditens" */
+article.cardIngredientes{
+    margin: 1rem 0;     /* margem */
+}
+/* estilização da article class="cardReceita" */
+article.cardReceita{
+    margin: 2rem 0;     /* margem */
+}
+
+/* Media Query para tamanho mínimo de 768px*/
+@media (min-width: 768px) {
+    /* estilização do article class="card" */
+    article.card{
+        flex-wrap: nowrap;  /* para não quebrar linha */
+    }
+    /* estilizações da div class="informações" */
+    div.informacoes{
+        max-width: 40%; /* largura maxima */
+    }
+}
