@@ -7,7 +7,10 @@ Código base: https://github.com/jennimay/CheckpointI-FrontEndII
 #
     Objetivo:
 
-	Olá Houser, tudo bem com você? Esta atividade tem como objetivo servir como primeiro instrumento avaliativo da disciplina. Fique atento às instruções e boa avaliação. O entregável será uma página em HTML5, CSS3 e Javascript seguindo os conteúdos ministrados até a aula 08. 
+	Olá Houser, tudo bem com você?
+	Esta atividade tem como objetivo servir como primeiro instrumento avaliativo da disciplina. 
+	Fique atento às instruções e boa avaliação. 
+	O entregável será uma página em HTML5, CSS3 e Javascript seguindo os conteúdos ministrados até a aula 08. 
 
 Instruções e requisitos do entregável:
 	
