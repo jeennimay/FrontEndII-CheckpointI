@@ -1,6 +1,6 @@
 
 ## Checkpoint I - Front end II
-#
+
 Projeto realizado para o checkpoint I de front end II, do curso Certified Tech Developer.
 ##
 Código base: https://github.com/jennimay/CheckpointI-FrontEndII

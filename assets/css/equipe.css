@@ -1,0 +1,38 @@
+/* Estilização da seção equipe */
+section.sectionEquipe{
+    display: flex;          /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
+    align-items: center;        /* alinhamento vertical centralizado */
+    justify-content: space-around;      /* alinhamento horizontal, com espaços entorno do elemento */
+    flex-wrap: wrap;        /* permitir quebra de linha */
+    padding: 2rem;      /* margem interna */
+    width: 80%;     /* largura */
+    margin: 2rem auto;       /* margem */
+    box-shadow: 0.2rem 0.2rem 0.9rem rgb(212, 208, 206);    /* sombreamento da caixa */
+}
+/* estilização de cada card de integrante */
+div.divIntegrante{
+    display: flex;      /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
+    justify-content: center;        /* alinhamento horizontal centralizado */
+    max-width: 20rem;       /* largura maxima */
+    margin: 1rem;       /* margem */
+}
+/* estilização da foto de cada integrante */
+div.divIntegrante img.profilePic{
+    max-width: 5rem;        /* largura máxima */
+    border-radius: 100%;    /* borda arredondada, para ficar um circulo */
+}
+/* estilização do nome em h3 de cada integrante */
+div.informacoesIntegrantes h3.nomeIntegrante{
+    margin: 0 1rem;     /* margem */
+    text-align: center;     /* texto centralizado */
+}
+/* div que contém os icones das redes sociais */
+div.socialContainer{
+    display: flex;      /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
+    justify-content: center;    /* alinhamento horizontal centralizado */
+}
+/* imagens das redes sociais */
+div.informacoesIntegrantes div.socialContainer img.socialIcon{
+    width: 2rem;        /* largura */
+    margin: 0.3rem;     /* margem */
+}

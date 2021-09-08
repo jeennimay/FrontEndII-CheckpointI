@@ -1,3 +1,8 @@
+/* IMPORTS */
+import contato from "./modulos/contato.js"
+import equipe from "./modulos/equipe.js"
+import ingredienteReceita from "./modulos/ingrediente_receita.js"
+
 /* botão cadastrar - form */
 let btnCadastrar = document.getElementById("btnCadastrar");
 
@@ -21,12 +26,14 @@ btnCadastrar.addEventListener("click", function(event){
                             </div>
                             <div class="informacoes">
                                 <h2 class="tituloCard">${titulo}</h2>
+                                <section class="receita">
+                                    <a id="ingrediente">Ingredientes</a>
+                                    <a id="modoDePreparo">Modo de preparo</a>
+                                </section>
                                 <article class="cardIngredientes" id="cardIngredientes">
-                                <h3>Ingredientes</h3>
-                                <p class="cardIngredites__paragrafo">${ingredientes}</p>
+                                    <p class="cardIngredites__paragrafo">${ingredientes}</p>
                                 </article>
                                 <article class="cardReceita" id="cardReceita">
-                                    <h3>Modo de preparo</h3>
                                     <p class="cardReceita__paragrafo">${receita}</p>
                                 </article>
                             </div>
@@ -47,12 +54,12 @@ btnCadastrar.addEventListener("click", function(event){
 let cadastrarReceita = document.getElementById("cadastrarReceita");
 //função abrir formulário através do botão "cadastrar receita" na nav
 cadastrarReceita.addEventListener("click", () => {
-    document.querySelector(".sectionForm").style.display = "block";
+    document.getElementById("formCadastro").style.display = "block";
 });
 /* botão cancelar */
 let btnReset = document.getElementById("btnReset");
     /* função fechar formulário através do botão "cancelar" dentro do formulário*/
 btnReset.addEventListener("click", () => {
-        document.querySelector(".sectionForm").style.display = "none";
+        document.getElementById("formCadastro").style.display = "none";
 });
 

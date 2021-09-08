@@ -1,6 +1,7 @@
 /* ESTILIZAÇÃO QUANDO O CURSOR PASSA SOBRE OS ELEMENTOS */
-    /* ESTILIZAÇÃO DO LINK NA TAG NAV */
-nav a:hover{
+
+    /* ESTILIZAÇÃO DO LINK NA TAG NAV */ /* ESTILIZAÇÃO BOTÃO RESET */ /* ESTILIZANDO A TAG A DO FOOTER */
+nav a:hover, button[class="btnReset"]:hover, section.receita h3, footer ul li a:hover{
     text-decoration: underline;     /* SUBLINHADO NO LINK */
 }
 
@@ -15,7 +16,7 @@ input:hover::placeholder, textarea:hover::placeholder{
     color: white;       /* COR DE FONTE */
 }
 /* ESTILIZAÇÃO BOTÃO CADASTRAR*/
-button[id="btnCadastrar"]:hover{
+button[id="btnCadastrar"]:hover, button[id="btnEnviar"]{
     background-color: seagreen;   /* COR DE FUNDO */  
 }
 /* ESTILIZAÇÃO BOTÃO RESET */

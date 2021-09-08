@@ -1,17 +1,17 @@
 /* ESTILIZAÇÃO SEÇÃO FORM */
 section.sectionForm{
-    margin: 2rem 0.5rem;        /* MARGEM */
+    margin: 3rem 0.5rem;        /* MARGEM */
     padding: 0.2rem;            /* MARGEM INTERNA - PADDING */
     position: absolute;         /* POSITION ABSOLUTE, PARA FICAR A CIMA DOS CARDS */
-    display: none;              /* DISPLAY NONE - PARA DEIXXAR O FORMULÁRIO ESCONDIDO */
+    display: none;              /* DISPLAY NONE - PARA DEIXAR O FORMULÁRIO ESCONDIDO */
     left: 50%;                  /* PARA CENTRALIZAR O FORMULÁRIO */
     top: 8%;                    /* 8% DO TOPO */
     transform: translate(-50%); /* PARA FAZER O CONTRAPONTO DO LEFT: 50% */
 }
 /* ARTICLE FORM */
 article.containerForm{
-    min-width: 15rem;       /* LARGURA MÍNIMA DO ARTICLE */
-    max-width: 40rem;       /* LARGURA MÁXIMA DO ARTICLE */
+    min-width: 20rem;       /* LARGURA MÍNIMA DO ARTICLE */
+    max-width: 50rem;       /* LARGURA MÁXIMA DO ARTICLE */
     padding: 2rem;          /* MARGEM INTERNA - PADDING */
     background-color: khaki;    /* COR DE FUNDO DO FORMULÁRIO */
     border-radius: 2rem;    /* BORDA ARREDONDADA */
@@ -24,16 +24,17 @@ label{
     padding-left: 0.6rem;       /* MARGEM INTERNA SOMENTE NA ESQUERDA */
     font-family: 'Montserrat', sans-serif;      /* LISTA DE FONTES */
     color: saddlebrown;     /* COR DA FONTE */
+    cursor: pointer;    /* "MÃOZINHA" */
 }
 /* ESTILIZAÇÃO INPUT E TEXTAREA */
 input, textarea{
     display: block;         /* DISPOSIAÇÃO EM BLOCO, PARA OCUPAR TODA LINHA */
-    margin: 0.3rem 0;       /* MARGEM */
-    min-width: 90%;         /* LARGURA MINIMA DE 90% */
+    margin: 0.3rem auto;       /* MARGEM */
+    min-width: 100%;         /* LARGURA MINIMA DE 90% */
     min-height: 2rem;       /* ALTURA MÍNIMA DE 2REM */
     padding: 0 1rem;        /* MARGEM INTERNA, PARA DIREITA E ESQUERDA (RIGTH AND LEFT) */
     border-radius: 2rem;    /* ARREDONDAMENTO DAS BORDAS */
-    border-style: none;     /* SEM EFEITO DE BORDA */
+    border: solid 2px transparent;      /* ESTILO DE BORDA */
     font-family: 'Besley', serif;   /* FONTE */
     font-weight: 600;       /* PESO DA FONTE */
     outline: none;          /* SEM OUTILINE, QUANDO O ELEMENTO ESTÁ EM FOCO, NÃO FICA ACAIXA PRETA EM VOLTA */
@@ -44,6 +45,7 @@ textarea{
     resize: none;           /* TIRAR A OPÇÃO DE RECONFIGURAR O TAMANHO, DIRETAMENTE NA PÁGINA */
     height: 8rem ;          /* ALTURA DE 8REM */
     text-indent: 0.3rem;    /* IDENTAÇÃO DO TEXTO */
+    padding: 0 1rem;        /* MARGEM INTERNA */
 }
 /* ESTILIZAÇÃO OS PLACESHOLDER */
 input::placeholder, textarea::placeholder{
@@ -72,4 +74,18 @@ button.btnReset{
     background-color: transparent;      /* COR DE FUNDO TRANSPARENTE */
     color: sienna;      /* COR DA FONTE */
     margin: 0 auto;         /* MARGEM */
+}
+
+/* FORMULÁRIO - CONTATO */
+/* ESTILIZAÇÃO SEÇÃO CONTATO */
+section.sectionContato{
+    margin: 1rem 0;        /* MARGEM */
+    padding: 0.2rem;            /* MARGEM INTERNA - PADDING */
+    background-color: khaki;    /* COR DE FUNDO DO FORMULÁRIO */
+    display: flex;      /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
+    justify-content: center;    /* alinhamento horizontal centralizado */
+}
+/* estilização do input da seção contato */
+section.sectionContato input{
+    width: 100%;        /* largura do input */
 }

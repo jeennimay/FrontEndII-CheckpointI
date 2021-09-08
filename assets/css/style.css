@@ -10,31 +10,36 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+/* body */
 /* header */
 /* configuração da nav */
 header nav{
     width: 100%;        /* largura */
-    height: 3rem;       /* altura */
+    height: 4rem;       /* altura */
     background-color: khaki;    /* cor de fundo */
+    position: fixed;
+    top: 0;
     display: flex;  /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
     justify-content: space-around;  /* espaçamento em volta dos itens */
     align-items: center;        /* alinhamento vertical centralizado */
 }
-/* estilização do link */
-nav a{
+/* estilização do link - menu superior(header - nav) e inferior (footer) */
+nav a, footer ul li a{
     text-decoration: none;      /* sem decoração no texto */
     color:saddlebrown;      /* cor de fonte */
     text-transform: uppercase;  /* transformando o texto em letras maiuscula */
     font-weight: bold;  /* peso da fonte */
     font-family: 'Montserrat', sans-serif;  /* fonte */
-    cursor: pointer;        /* cursor pointer */
 }
-/* body */
+/* main */
 /* estilização da seção class="containerCard" */
 section.containerCard{
     display: flex;      /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
     flex-direction: column; /* para que fique em coluna */
     margin: 0 auto;     /* margem: 0 para cima e para baixo, e auto para centralizar horizontalmente o elemento */
+}
+section.primeiroCard{
+    margin-top: 6rem;
 }
 /* estilização da article class="card" */
 article.card{
@@ -65,6 +70,17 @@ div.informacoes h2{
     margin: 0.5rem 0 1rem;  /* margem */
     text-align: center;     /* alinhamento de texto */
 }
+/* estilização seção receita */
+section.receita{
+    display: flex;  /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
+    justify-content: space-around;  /* alinhamento horizontal com espaço em volta do elemento */
+    flex-wrap: wrap;    /* permitir quebra de linha */
+}
+/* estilização do h3 dentro da seção receita */
+section.receita h3{
+    cursor: pointer;    /* cursor */
+    text-transform: uppercase;      /* transformando o texto em maiusculo */
+}
 /* estilização do parágrafo dentro da div informações */
 div.informacoes p{
     font-family: 'Besley', serif;   /* font */
@@ -73,11 +89,36 @@ div.informacoes p{
 /* estilização da article class="cardIngreditens" */
 article.cardIngredientes{
     margin: 1rem 0;     /* margem */
+    display: block;     /* disposição em bloco */
 }
 /* estilização da article class="cardReceita" */
 article.cardReceita{
-    margin: 2rem 0;     /* margem */
+    margin: 1rem 0;     /* margem */
+    display: none;      /* sem visibilidade */
 }
+
+/* FOOTER */
+footer{
+    width: 100%;        /* largura */
+    padding: 1rem 2rem;      /* margem interna */
+    background-color: khaki;    /* cor de fundo */
+    display: flex;      /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
+    justify-content: space-around;  /* espaço entre os blocos */
+}
+/* p */
+footer p{
+    align-self: center;     /* Centralizando o elemento verticalmente */
+}
+/* ul */
+footer ul{
+    text-align: right;      /* alinhamento à direita */
+}
+/* Estilização da lista - menu do footer */
+footer ul li{
+    list-style: none;       /* tirando a "bolinha" ao lado do conteúdo da lista */
+    margin: 0.5rem;         /* margem */
+}
+
 
 /* Media Query para tamanho mínimo de 768px*/
 @media (min-width: 768px) {

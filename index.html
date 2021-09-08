@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- CSS - FORM -->
     <link rel="stylesheet" href="./assets/css/form-style.css">
+    <!-- CSS - EQUIPE -->
+    <link rel="stylesheet" href="./assets/css/equipe.css">
     <!-- CSS - HOVER -->
     <link rel="stylesheet" href="./assets/css/hover.css">
     <!-- GOOGLE FONTS -->
@@ -27,7 +29,7 @@
         </nav>
     </header>
     <main>
-        <section class="sectionForm">
+        <section class="sectionForm" id="formCadastro">
             <article class="containerForm">
                 <form action="#" method="post" id="form">
                     <label for="titulo">Nome da receita</label>
@@ -44,15 +46,18 @@
                 </form>
             </article>
         </section>
-        <section class="containerCard">
+        <section class="containerCard primeiroCard">
             <article class="card">
                 <div class="divImg">
                     <img src="https://img.itdg.com.br/images/recipes/000/041/516/324032/324032_original.jpg" alt="">
                 </div>
                 <div class="informacoes">
                     <h2 class="tituloCard">Bolo de Banana</h2>
+                    <section class="receita">
+                        <h3 id="ingrediente">Ingredientes</h3>
+                        <h3 id="modoDePreparo">Modo de preparo</h3>
+                    </section>
                     <article class="cardIngredientes" id="cardIngredientes">
-                        <h3>Ingredientes</h3>
                         <p class="cardIngredites__paragrafo">4 bananas-prata maduras amassadas
                             3 ovos
                             1 xícara (chá) de açúcar
@@ -65,7 +70,6 @@
                             meia colher (chá) de canela em pó</p>
                     </article>
                     <article class="cardReceita" id="cardReceita">
-                        <h3>Modo de preparo</h3>
                         <p class="cardReceita__paragrafo">Em um recipiente, misture as bananas, os ovos e o açúcar.
 
                         Acrescente o óleo, o Leite NINHO, a farinha de trigo, a canela, o fermento em pó e misture bem.
@@ -78,9 +82,15 @@
             </article>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Projeto realizado para o checkpoint I de Front End II, por Jennifer Mayumi 2021.</p>
+        <ul>
+            <li><a href="#contato" class="contato" id="contato">Entrar em contato</a></li>
+            <li><a href="#equipe" class="equipe" id="equipe">Equipe</a></li>
+        </ul>
+    </footer>
     <!-- script -->
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/app.js" type="module"></script>
 </body>
 
 </html>
