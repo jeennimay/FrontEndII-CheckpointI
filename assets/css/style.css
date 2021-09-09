@@ -10,6 +10,9 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+/* html,body{
+    height: 100vh;
+} */
 /* body */
 /* header */
 /* configuração da nav */
@@ -18,6 +21,7 @@ header nav{
     height: 4rem;       /* altura */
     background-color: khaki;    /* cor de fundo */
     position: fixed;
+    z-index: 1;
     top: 0;
     display: flex;  /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
     justify-content: space-around;  /* espaçamento em volta dos itens */
@@ -32,6 +36,9 @@ nav a, footer ul li a{
     font-family: 'Montserrat', sans-serif;  /* fonte */
 }
 /* main */
+main{
+    padding: 8rem 0;
+}
 /* estilização da seção class="containerCard" */
 section.containerCard{
     display: flex;      /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
@@ -80,6 +87,7 @@ section.receita{
 section.receita h3{
     cursor: pointer;    /* cursor */
     text-transform: uppercase;      /* transformando o texto em maiusculo */
+    margin: 0.5rem 0;  /* margem */
 }
 /* estilização do parágrafo dentro da div informações */
 div.informacoes p{
@@ -104,6 +112,8 @@ footer{
     background-color: khaki;    /* cor de fundo */
     display: flex;      /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
     justify-content: space-around;  /* espaço entre os blocos */
+    position: fixed;
+    bottom: 0;
 }
 /* p */
 footer p{
@@ -116,7 +126,7 @@ footer ul{
 /* Estilização da lista - menu do footer */
 footer ul li{
     list-style: none;       /* tirando a "bolinha" ao lado do conteúdo da lista */
-    margin: 0.5rem;         /* margem */
+    margin: 0.8rem 0.5rem;         /* margem */
 }
 
 
@@ -131,3 +141,29 @@ footer ul li{
         max-width: 40%; /* largura maxima */
     }
 }
+
+/* Media - estilização para telas a partir de 1024px */
+@media (min-width: 1024px) {
+    /* configuração da nav */
+    header nav{
+        height: 5.3srem;       /* altura */
+    }
+    section.primeiroCard{
+        margin: 8rem 0 2.2rem;
+    }
+    /* estilização da article class="card" */
+    article.card{
+        max-height: 60vh;        /* altura maxima de 80% da viewport */
+    }
+    /* estilização da div que contem a img */
+    div.divImg{
+        max-width: 100%;     /* largura máxima */
+    }
+    /* estilização da h2 dentro da div informações */
+    div.informacoes h2{
+        font-size: 2rem;   
+    }
+
+}
+
+

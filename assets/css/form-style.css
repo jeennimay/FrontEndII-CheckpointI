@@ -1,11 +1,10 @@
 /* ESTILIZAÇÃO SEÇÃO FORM */
 section.sectionForm{
-    margin: 3rem 0.5rem;        /* MARGEM */
     padding: 0.2rem;            /* MARGEM INTERNA - PADDING */
     position: absolute;         /* POSITION ABSOLUTE, PARA FICAR A CIMA DOS CARDS */
     display: none;              /* DISPLAY NONE - PARA DEIXAR O FORMULÁRIO ESCONDIDO */
     left: 50%;                  /* PARA CENTRALIZAR O FORMULÁRIO */
-    top: 8%;                    /* 8% DO TOPO */
+    top: 4rem;                    /* 8% DO TOPO */
     transform: translate(-50%); /* PARA FAZER O CONTRAPONTO DO LEFT: 50% */
 }
 /* ARTICLE FORM */
@@ -14,7 +13,7 @@ article.containerForm{
     max-width: 50rem;       /* LARGURA MÁXIMA DO ARTICLE */
     padding: 2rem;          /* MARGEM INTERNA - PADDING */
     background-color: khaki;    /* COR DE FUNDO DO FORMULÁRIO */
-    border-radius: 2rem;    /* BORDA ARREDONDADA */
+    border-radius: 1rem;    /* BORDA ARREDONDADA */
 }
 /* ESTILIZAÇAO DA LABEL */
 label{
@@ -33,7 +32,7 @@ input, textarea{
     min-width: 100%;         /* LARGURA MINIMA DE 90% */
     min-height: 2rem;       /* ALTURA MÍNIMA DE 2REM */
     padding: 0 1rem;        /* MARGEM INTERNA, PARA DIREITA E ESQUERDA (RIGTH AND LEFT) */
-    border-radius: 2rem;    /* ARREDONDAMENTO DAS BORDAS */
+    border-radius: 0.5rem;    /* ARREDONDAMENTO DAS BORDAS */
     border: solid 2px transparent;      /* ESTILO DE BORDA */
     font-family: 'Besley', serif;   /* FONTE */
     font-weight: 600;       /* PESO DA FONTE */
@@ -85,7 +84,28 @@ section.sectionContato{
     display: flex;      /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
     justify-content: center;    /* alinhamento horizontal centralizado */
 }
+/* estilização h3 do form contato */
+section.sectionContato h3{
+    text-align: center;      /* alinhamento do texto */
+    color:saddlebrown;      /* cor de fonte */
+    text-transform: uppercase;  /* transformando o texto em letras maiuscula */
+    font-weight: bold;  /* peso da fonte */
+    font-family: 'Montserrat', sans-serif;  /* fonte */
+}
 /* estilização do input da seção contato */
 section.sectionContato input{
     width: 100%;        /* largura do input */
+}
+
+
+/* Media - estilização para telas a partir de 1024px */
+@media (min-width: 1024px) {
+    /* ARTICLE FORM */
+    article.containerForm{
+        min-width: 40rem;       /* LARGURA MÍNIMA DO ARTICLE */
+    }
+    /* ESTILIZAÇÃO DA TEXTAREA */
+    textarea{
+        height: 5rem ;          /* ALTURA DE 8REM */
+    }
 }

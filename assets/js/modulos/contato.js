@@ -7,6 +7,7 @@ export default function contato(){
                 
             document.querySelector("main").innerHTML += `<section class="sectionContato" id="sectionContato">
                                                             <form action="#" method="post" id="form">
+                                                                <h3>Contato</h3>
                                                                 <label for="nomeContato">Nome</label>
                                                                 <input type="text" name="nomeContato" id="nomeContato" class="nomeContato" placeholder="Digite seu nome">
                                                                 <label for="email">Email</label>

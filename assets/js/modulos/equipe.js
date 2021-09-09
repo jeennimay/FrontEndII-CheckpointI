@@ -24,7 +24,7 @@ export default function equipe(){
             nome: "Guilherme Santos",
             github: "https://github.com/guilherme-sik",
             linkedin: "https://www.linkedin.com/in/guilherme-santos-38b562206/",
-            profilePic: "https://img-premium.flaticon.com/png/512/3667/premium/3667479.png?token=exp=1631139820~hmac=f06e954be7cbc04f8551e63cd052dbfb"
+            profilePic: "./assets/img/boy.png"
         },
     ];
     let linkedinIcon = "https://cdn-icons-png.flaticon.com/512/174/174857.png";

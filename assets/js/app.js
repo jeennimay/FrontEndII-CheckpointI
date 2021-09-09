@@ -60,9 +60,12 @@ btnCadastrar.addEventListener("click", function(event){
     document.getElementById("ingredientes").value = "";
 
     
-
+    //fução para ver os ingredientes e as receitas
     ingredienteReceita();
 });
+
+//fução para ver os ingredientes e as receitas
+ingredienteReceita();   
 
 /* botão para cadastrar mais cards */
 let cadastrarReceita = document.getElementById("cadastrarReceita");
