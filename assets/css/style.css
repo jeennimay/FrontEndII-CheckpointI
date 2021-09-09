@@ -10,9 +10,6 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-/* html,body{
-    height: 100vh;
-} */
 /* body */
 /* header */
 /* configuração da nav */
@@ -37,16 +34,13 @@ nav a, footer ul li a{
 }
 /* main */
 main{
-    padding: 8rem 0;
+    padding: 6rem 0 10rem;
 }
 /* estilização da seção class="containerCard" */
 section.containerCard{
     display: flex;      /* disposição flex (permite linha ou bloco, e alinhamento atraves do justify-content e align-content) */
     flex-direction: column; /* para que fique em coluna */
     margin: 0 auto;     /* margem: 0 para cima e para baixo, e auto para centralizar horizontalmente o elemento */
-}
-section.primeiroCard{
-    margin-top: 6rem;
 }
 /* estilização da article class="card" */
 article.card{
@@ -146,10 +140,7 @@ footer ul li{
 @media (min-width: 1024px) {
     /* configuração da nav */
     header nav{
-        height: 5.3srem;       /* altura */
-    }
-    section.primeiroCard{
-        margin: 8rem 0 2.2rem;
+        height: 5.3rem;       /* altura */
     }
     /* estilização da article class="card" */
     article.card{
