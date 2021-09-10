@@ -1,0 +1,35 @@
+@media (min-width: 1440px) {
+    /* configuração da nav */
+    header nav{
+        height: 5.3rem;       /* altura */
+    }
+    /* estilização da seção class="containerCard" */
+    section.containerCard{
+        max-width: 100%;
+        margin-top: 1rem;     /* margem */
+        flex-direction: row;    /* direção "padrão", permitindo criação para as laterais */
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    /* estilização da article class="card" */
+    article.card{
+        width: 25rem;        /* largura de 25rem */
+        flex-wrap: wrap;        /* permitir quebra de linha */
+        max-height: 80%;        /* altura máxima de até 80% */
+    }
+    /* estilização da div que contem a img */
+    div.divImg{
+        max-width: 90%;     /* largura máxima */
+        margin: 0 auto;     /* margem para centralizar o a imagem dentro do card */
+    }
+    /* estilização da div informações */
+    div.informacoes{
+        margin: 1rem auto;  /*  margem*/
+        max-width: 90%; /* largura maxima */
+    }
+    /* estilização da h2 dentro da div informações */
+    div.informacoes h2{
+        font-size: 2rem;    /* tamanho de fonte */  
+    }
+    
+}

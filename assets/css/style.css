@@ -56,7 +56,7 @@ article.card{
 /* estilização da div que contem a img */
 div.divImg{
     max-width: 90%;     /* largura máxima */
-    margin-right: 2rem;     /* margem à direita */
+    margin: 0 auto;     /* margem para centralizar o a imagem dentro do card */
 }
 /* estilização da imagem */
 div.divImg img{
@@ -132,7 +132,8 @@ footer ul li{
     }
     /* estilizações da div class="informações" */
     div.informacoes{
-        max-width: 40%; /* largura maxima */
+        max-width: 40%;     /* largura maxima */
+        margin: 0 1rem;     /* margem */
     }
 }
 
@@ -144,7 +145,7 @@ footer ul li{
     }
     /* estilização da article class="card" */
     article.card{
-        max-height: 60vh;        /* altura maxima de 80% da viewport */
+        max-height: 80vh;        /* altura maxima de 80% da viewport */
     }
     /* estilização da div que contem a img */
     div.divImg{
@@ -152,7 +153,7 @@ footer ul li{
     }
     /* estilização da h2 dentro da div informações */
     div.informacoes h2{
-        font-size: 2rem;   
+        font-size: 2rem;    /* tamanho de fonte */  
     }
 
 }
